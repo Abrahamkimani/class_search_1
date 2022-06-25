@@ -1,7 +1,7 @@
-//! This contract implements simple counter backed by storage on blockchain.
+//! This contract registers students in an online class
 //!
-//! The contract provides methods to [increment] / [decrement] counter and
-//! get it's current value [get_num] or [reset].
+//! The contract helps the tr to keep track of the students present
+//! and absent in an online class
 use near_sdk::borsh::{self, BorshDeserialize, BorshSerialize};
 use near_sdk::collections::{LookupMap, Vector};
 use near_sdk::{log, near_bindgen};
