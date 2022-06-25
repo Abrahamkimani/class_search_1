@@ -1,10 +1,13 @@
 # Rust Smart Contract Template
 
 ## Getting started
+//near descreption
 
 To get started with this template:
 
 1. Click the "Use this template" button to create a new repo based on this template
+
+//near call command 
 2. Update line 2 of `Cargo.toml` with your project name
 3. Update line 4 of `Cargo.toml` with your project author names
 4. Set up the [prerequisites](https://github.com/near/near-sdk-rs#pre-requisites)
