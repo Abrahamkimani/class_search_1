@@ -1,26 +1,23 @@
-# Rust Smart Contract Template
+This contract registers students in an online class
 
-## Getting started
-//near descreption
+The contract helps the tr to keep track of the students present
 
-To get started with this template:
+and absent in an online class
 
-1. Click the "Use this template" button to create a new repo based on this template
 
-//near call command 
-2. Update line 2 of `Cargo.toml` with your project name
-3. Update line 4 of `Cargo.toml` with your project author names
-4. Set up the [prerequisites](https://github.com/near/near-sdk-rs#pre-requisites)
-5. Begin writing your smart contract in `src/lib.rs`
-6. Test the contract 
 
-    `cargo test -- --nocapture`
+*near commands: 
+Test the contract:
+  `cargo test `
 
-8. Build the contract
+*Build the contract:
+  'cargo build --target wasm32-unknown-unknown --release`
+ 
+ *To deploy the code:
+ eg
+  'near deploy --wasmFile target/wasm32-unknown-unknown/release/class_search_1.wasm --accountId kimani.testnet'
+ 
+*To call any function:
+eg
+ 'near call abraham.kimani.testnet register_student '{"name": "kimani", "admission":"210"}' --accountId kimani.testnet
 
-    `RUSTFLAGS='-C link-arg=-s' cargo build --target wasm32-unknown-unknown --release`
-
-**Get more info at:**
-
-* [Rust Smart Contract Quick Start](https://docs.near.org/docs/develop/contracts/rust/intro)
-* [Rust SDK Book](https://www.near-sdk.io/)
